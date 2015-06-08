@@ -1,11 +1,24 @@
+/* Rules for all elements */
 @default-transition-time: 0.4s;
 
 * {
 	transition: @default-transition-time;
 	font-family: "Open Sans";
+	.box-sizing(border-box);
 }
 
+
+/* Rules for high-level elements */
 body, html {
-	margin: 0;
 	height: 100%;
+
+	background-color: @color-content;
 }
+
+/* Media */
+@phone: ~"only screen and (max-width: 479px)";
+@tablet: ~"only screen and (min-width: 768px) and (max-width: 959px)";
+
+/* Sidebar transition values */
+@sidebar-width-phone: 0;
+@sidebar-width-normal: 20%;

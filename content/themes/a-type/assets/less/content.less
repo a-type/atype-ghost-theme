@@ -1,0 +1,22 @@
+
+.layout-container {
+	.page-content {
+		background-color: @color-content;
+
+		margin-top: 100%;
+		opacity: 0;
+
+		padding-left: @sidebar-width-normal;
+
+		@media @phone {
+			padding-left: @sidebar-width-phone;
+		}
+	}
+
+	&.scrolled {
+		.page-content {
+			margin-top: 25%;
+			opacity: 1;
+		}
+	}
+}

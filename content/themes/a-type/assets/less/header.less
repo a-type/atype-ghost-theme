@@ -1,15 +1,37 @@
-.main-header {
-	.display(flex);
 
-	height: 100%;
-	width: 100%;
+.layout-container {
+	.main-header {
+		.display(flex);
 
 
-	.main-header-content {
-		width: 50%;
-		height: 50%;
-		margin: auto;
+		// layout
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 4;
 
-		text-align: center;
+		// color
+		background-color: @color-header;
+
+		.main-header-content {
+			width: 50%;
+			height: 50%;
+			margin: auto;
+
+			text-align: center;
+		}
+	}
+
+	// when scrolled down
+	&.scrolled {
+		.main-header {
+			width: @sidebar-width-normal;
+
+			@media @phone {
+				width: @sidebar-width-phone;
+			}
+		}
 	}
 }

@@ -1,48 +1,59 @@
+/* Rules for all elements */
 * {
   transition: 0.4s;
   font-family: "Open Sans";
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+/* Rules for high-level elements */
 body,
 html {
-  margin: 0;
   height: 100%;
+  background-color: #efefef;
 }
-.main-header {
+/* Media */
+/* Sidebar transition values */
+.layout-container .main-header {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
   height: 100%;
   width: 100%;
+  z-index: 4;
+  background-color: #fefefe;
 }
-.main-header .main-header-content {
+.layout-container .main-header .main-header-content {
   width: 50%;
   height: 50%;
   margin: auto;
   text-align: center;
 }
-.layout-container {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
+.layout-container.scrolled .main-header {
+  width: 20%;
 }
-.layout-container.scrolled {
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+@media only screen and (max-width: 479px) {
+  .layout-container.scrolled .main-header {
+    width: 0;
+  }
+}
+.layout-container .page-content {
+  background-color: #efefef;
+  margin-top: 100%;
+  opacity: 0;
+  padding-left: 20%;
+}
+@media only screen and (max-width: 479px) {
+  .layout-container .page-content {
+    padding-left: 0;
+  }
+}
+.layout-container.scrolled .page-content {
+  margin-top: 25%;
+  opacity: 1;
 }

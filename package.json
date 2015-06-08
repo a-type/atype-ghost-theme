@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "express": "^4.11.0",
-    "ghost": "^0.5.8",
+    "ghost": "^0.6.0",
     "pg": "latest",
     "forever": "~0.13.0"
   }
