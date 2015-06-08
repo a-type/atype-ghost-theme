@@ -1,0 +1,23 @@
+{
+  "name": "grantforrest.net-v3",
+  "version": "0.1.0",
+  "homepage": "https://github.com/a-type/grantforrest.net-v3",
+  "main": "app.js",
+  "keywords": [
+    "portfolio"
+  ],
+  "authors": [
+    "Grant Forrest"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lesshat": "~3.0.2"
+  }
+}
