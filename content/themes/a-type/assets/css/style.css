@@ -42,18 +42,33 @@ html {
     width: 0;
   }
 }
+.layout-container.scrolled .main-header .main-header-content .page-description {
+  display: none;
+}
 .layout-container .page-content {
   background-color: #efefef;
   margin-top: 100%;
   opacity: 0;
-  padding-left: 20%;
+  margin-left: 20%;
+  padding: 64px;
 }
 @media only screen and (max-width: 479px) {
   .layout-container .page-content {
-    padding-left: 0;
+    margin-left: 0;
   }
 }
 .layout-container.scrolled .page-content {
   margin-top: 25%;
   opacity: 1;
+}
+nav.main-nav {
+  position: fixed;
+}
+nav.pagination {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+article.post {
+  padding: 16px;
 }
