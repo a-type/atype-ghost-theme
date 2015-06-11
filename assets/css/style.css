@@ -361,6 +361,7 @@ article.post-preview:hover * {
   border-left: 2px solid #275dad;
   background-color: rgba(252, 247, 248, 0.1);
   font-style: italic;
+  padding: 8px;
 }
 .post-body code {
   font-family: "Source Code Pro", monospace;
