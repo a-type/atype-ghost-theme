@@ -234,7 +234,7 @@ article.post-preview .post-preview-main {
   -webkit-flex: 8 0;
   -ms-flex: 8 0;
   flex: 8 0;
-  background-color: rgba(252, 247, 248, 0.1);
+  background-color: rgba(34, 34, 34, 0.06);
   padding: 8px;
 }
 article.post-preview .post-preview-main .post-header .post-title {
@@ -285,7 +285,7 @@ article.post-preview .read-more {
   -webkit-flex: 1 0;
   -ms-flex: 1 0;
   flex: 1 0;
-  background-color: rgba(252, 247, 248, 0.1);
+  background-color: rgba(34, 34, 34, 0.06);
 }
 article.post-preview .read-more i {
   position: absolute;
@@ -321,6 +321,35 @@ article.post-preview:hover * {
 .post-head .main-header-content.contrast {
   color: #fcf7f8;
   text-shadow: 0 0 8px #222222;
+}
+.post-head .main-header-content .post-back {
+  display: none;
+  background-color: rgba(34, 34, 34, 0.8);
+  height: 64px;
+  color: #fcf7f8;
+  position: absolute;
+  left: 0;
+  bottom: 15%;
+  right: 15%;
+  cursor: pointer;
+}
+.post-head .main-header-content .post-back:hover {
+  background-color: #222222;
+  right: 5%;
+}
+.post-head .main-header-content .post-back i {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: inherit;
+}
+.scrolled .post-head .post-back {
+  display: block;
 }
 .post-content {
   margin-right: 20%;

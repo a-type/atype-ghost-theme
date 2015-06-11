@@ -7,6 +7,41 @@
 			color: @color-foreground-contrast;
 			text-shadow : 0 0 8px @color-background-contrast;
 		}
+
+		.post-back {
+			display: none;
+			background-color: fade(@color-background-contrast, 80%);
+			height: 64px;
+			color: @color-foreground-contrast;
+
+			position: absolute;
+			left: 0;
+			bottom: 15%;
+			right: 15%;
+
+			cursor: pointer;
+
+			&:hover {
+				background-color: @color-background-contrast;
+				right: 5%;
+			}
+
+			i {
+				position: absolute;
+				right: 24px;
+				top: 50%;
+				.translateY(-50%);
+				color: inherit;
+			}
+		}
+	}
+}
+
+.scrolled {
+	.post-head {
+		.post-back {
+			display: block;
+		}
 	}
 }
 
