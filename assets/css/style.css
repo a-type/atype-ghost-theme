@@ -157,7 +157,9 @@ h5 {
   }
 }
 .layout-container.scrolled .page-content,
-.layout-container.scrolled .post-content {
+.layout-container.paged .page-content,
+.layout-container.scrolled .post-content,
+.layout-container.paged .post-content {
   margin-top: 25%;
   opacity: 1;
 }
