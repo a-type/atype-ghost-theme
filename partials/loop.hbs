@@ -1,7 +1,7 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
-<a class="post-link" href="{{url}}">
-	<article class="{{post_class}} post-preview">
+<article class="{{post_class}} post-preview">
+	<a class="post-link" href="{{url}}">
 		<div class="post-preview-image" style="background-image: url('{{ image absolute="true" }}');"></div>
 		<div class="post-preview-main">
 			<header class="post-header">
@@ -18,8 +18,8 @@
 			</footer>
 		 </div>
 		<a class="read-more post-link" href="{{url}}"><i class="fa fa-arrow-right"></i></a>
-	</article>
-</a>
+	</a>
+</article>
 {{/foreach}}
 
 {{! Previous/next page links - displayed on every page }}
