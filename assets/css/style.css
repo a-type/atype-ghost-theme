@@ -222,6 +222,7 @@ article.post-preview .post-preview-main .post-header .post-title {
 article.post-preview .post-preview-main .post-excerpt {
   max-height: 240px;
   overflow-y: hidden;
+  color: #222222;
 }
 article.post-preview .post-preview-main .post-excerpt p {
   padding: 8px 0;
