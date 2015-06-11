@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (grunt) {
-	var lessFiles = './lib/assets/less/**/*.less';
+	var lessFiles = './assets/less/**/*.less';
 
 	grunt.initConfig({
 		watch: {

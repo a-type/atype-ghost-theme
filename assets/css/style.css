@@ -34,7 +34,8 @@ a h1,
 a h2,
 a h3,
 a h4,
-a h5 {
+a h5,
+a i {
   color: #222222;
 }
 h1 a,
@@ -212,6 +213,10 @@ article.post-preview .post-preview-main .post-header .post-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
+article.post-preview .post-preview-main .post-excerpt {
+  max-height: 240px;
+  overflow-y: hidden;
+}
 article.post-preview .post-preview-main .post-excerpt p {
   padding: 8px 0;
   font-size: 13px;
@@ -226,6 +231,9 @@ article.post-preview .post-preview-main .post-excerpt h4 {
 }
 article.post-preview .post-preview-main .post-excerpt h5 {
   font-size: 0.5vh;
+}
+article.post-preview .post-preview-main .post-excerpt img {
+  max-height: 480px;
 }
 article.post-preview .post-preview-main .post-meta {
   color: rgba(34, 34, 34, 0.8);
