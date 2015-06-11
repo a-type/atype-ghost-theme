@@ -340,7 +340,8 @@ article.post-preview:hover * {
   height: 64px;
   border-radius: 100%;
 }
-.author-column .post-author p {
+.author-column .post-author p,
+.author-column .post-author span {
   font-size: 10px;
 }
 .layout-container.scrolled .author-column {
