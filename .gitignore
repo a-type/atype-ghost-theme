@@ -1,9 +1,0 @@
-bower_components
-node_modules/
-content/images
-content/data
-content/themes/a-type/assets/css/a-type.css
-
-./out.log
-./in.log
-./err.log
