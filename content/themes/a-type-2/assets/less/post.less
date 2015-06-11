@@ -1,0 +1,67 @@
+.post-head {
+	.animation(fade-in 1s);
+	background-size: cover;
+
+	.main-header-content {
+		&.contrast {
+			color: @color-foreground-contrast;
+			text-shadow : 0 0 8px @color-background-contrast;
+		}
+	}
+}
+
+.post-content {
+	margin-right: @sidebar-width-normal;
+
+	@media @phone {
+		margin-right: @sidebar-width-phone;
+	}
+}
+
+.author-column {
+	position: fixed;
+	width: @sidebar-width-normal;
+	right: 0;
+	height: 100vh;
+	top: 0;
+
+	opacity: 0;
+
+	.post-author {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		.translate(-50% -50%);
+		width: auto;
+
+		text-align: center;
+
+		@media @phone {
+			position: initial;
+			width: auto;
+		}
+
+		.author-image {
+			img {
+				width: 64px;
+				height: 64px;
+				border-radius: 100%;
+			}
+		}
+
+		p {
+			font-size: 10px;
+		}
+	}
+}
+
+.layout-container.scrolled {
+	.author-column {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}

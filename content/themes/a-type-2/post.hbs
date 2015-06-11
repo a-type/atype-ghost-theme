@@ -6,17 +6,21 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="main-header post-head">
-    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
-        <a class="button back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-        <a class="button subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+<header class="main-header post-head" style="background-image: url('{{ image absolute=true }}');">
+    <nav class="main-nav {{#if image}}contrast{{/if}} clearfix">
+        <a class="button back-button icon-arrow-left" href="{{@blog.url}}">
+            <i class="fa fa-home"></i>
+        </a>
+        <a class="button subscribe-button icon-feed" href="{{@blog.url}}/rss/">
+            <i class="fa fa-rss"></i>
+        </a>
     </nav>
-    <div class="main-header-content">
-        <h1 class="page-title" {{#if image}} style="background-image: url({{image}});"{{/if}}>{{title}}</h1>
+    <div class="main-header-content {{#if image}}contrast{{/if}}">
+        <h1 class="page-title">{{title}}</h1>
     </div>
 </header>
 
-<main class="content" role="main">
+<main class="content post-content" role="main">
 
     <article class="{{post_class}}">
 
@@ -26,36 +30,11 @@
             </section>
         </header>
 
-        <section class="post-content">
+        <section class="post-body">
             {{content}}
         </section>
 
         <footer class="post-footer">
-
-        {{! Everything inside the #author tags pulls data from the author }}
-        {{#author}}
-
-            {{#if image}}
-            <figure class="author-image">
-                <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
-            </figure>
-            {{/if}}
-
-            <section class="author">
-                <h4><a href="{{url}}">{{name}}</a></h4>
-
-                {{#if bio}}
-                    <p>{{bio}}</p>
-                {{else}}
-                    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-                {{/if}}
-                <div class="author-meta">
-                    {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                    {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-                </div>
-            </section>
-
-        {{/author}}
 
             <section class="share">
                 <h4>Share this post</h4>
@@ -78,5 +57,32 @@
     </article>
 
 </main>
+
+{{! Everything inside the #author tags pulls data from the author }}
+{{#author}}
+<div class="author-column">
+    <div class="post-author">
+        {{#if image}}
+        <figure class="author-image">
+            <a class="img" href="{{url}}"><img src="{{image}}"></img></a>
+        </figure>
+        {{/if}}
+
+        <section class="author">
+            <h4><a href="{{url}}">{{name}}</a></h4>
+
+            {{#if bio}}
+                <p>{{bio}}</p>
+            {{else}}
+                <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+            {{/if}}
+            <div class="author-meta">
+                {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
+                {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+            </div>
+        </section>
+    </div>
+</div>
+{{/author}}
 
 {{/post}}

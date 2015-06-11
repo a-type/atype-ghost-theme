@@ -1,14 +1,16 @@
 @content-padding: 64px;
 
 .layout-container {
-	.page-content {
-		background-color: @color-content;
+	.page-content, .post-content {
+		background-color: @color-background;
 
 		margin-top: 100%;
 		opacity: 0;
 
 		margin-left: @sidebar-width-normal;
-		padding: @content-padding;
+		padding-left: @content-padding;
+
+		overflow-x: hidden;
 
 		@media @phone {
 			margin-left: @sidebar-width-phone;
@@ -16,7 +18,7 @@
 	}
 
 	&.scrolled {
-		.page-content {
+		.page-content, .post-content {
 			margin-top: 25%;
 			opacity: 1;
 		}

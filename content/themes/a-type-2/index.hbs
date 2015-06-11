@@ -5,7 +5,9 @@
 <header class="main-header sidebar">
 	<nav class="main-nav clearfix">
 		{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-		<a class="button subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+		<a class="button subscribe-button icon-feed" href="{{@blog.url}}/rss/">
+            <i class="fa fa-rss"></i>      
+        </a>
 	</nav>
 	<div class="main-header-content">
 		<h1 class="page-title">{{@blog.title}}</h1>
