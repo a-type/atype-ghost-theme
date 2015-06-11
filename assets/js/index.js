@@ -58,15 +58,6 @@
         $(window).smartresize(casperFullImg);
     });
 
-    $document.scroll(function () {
-        if ($document.scrollTop()) {
-            $(".layout-container").addClass("scrolled");
-        }
-        else {
-            $(".layout-container").removeClass("scrolled");
-        }
-    })
-
     // smartresize
     jQuery.fn[sr] = function(fn) { return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 })(jQuery, 'smartresize');

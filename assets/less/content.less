@@ -4,6 +4,8 @@
 	.page-content, .post-content {
 		background-color: @color-background;
 
+		position: relative;
+		top: 0;
 		margin-top: 100%;
 		opacity: 0;
 
@@ -15,6 +17,10 @@
 		@media @phone {
 			margin-left: @sidebar-width-phone;
 		}
+
+		&.navigating {
+			top: -200vh;
+		}
 	}
 
 	&.scrolled, &.paged {
@@ -23,4 +29,12 @@
 			opacity: 1;
 		}
 	}
+
+	&.paged {
+		.page-content, .post-content {
+			.animation(scroll-up @default-transition-time);
+		}
+	}
 }
+
+.keyframes(~'scroll-up, from{ margin-top: 100%; opacity: 0; } to{ margin-top: 25%; opacity: 1; }');
