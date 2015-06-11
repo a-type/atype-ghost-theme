@@ -1,0 +1,25 @@
+{
+  "name": "A-Type Ghost Theme",
+  "version": "2.0.0",
+  "homepage": "https://github.com/a-type/grantforrest.net-v3",
+  "authors": [
+    "Grant Forrest <a-type@outlook.com>"
+  ],
+  "description": "A Ghost Theme",
+  "main": "assets/less/style.less",
+  "keywords": [
+    "Theme",
+    "Ghost"
+  ],
+  "license": "Copyright",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lesshat": "~3.0.2"
+  }
+}
