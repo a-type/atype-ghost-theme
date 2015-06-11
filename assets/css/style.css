@@ -21,14 +21,28 @@ html {
   left: -100vw;
   background-color: white;
 }
-/* Rules for linkes (no blue!) */
+/* Rules for links */
 a {
-  color: #222222;
+  color: #275dad;
   font-style: italic;
   text-decoration: none;
 }
 a:focus {
   outline: none;
+}
+a h1,
+a h2,
+a h3,
+a h4,
+a h5 {
+  color: #222222;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  color: #222222;
 }
 /* Rules for inputs (no outline!) */
 input:focus,
@@ -155,8 +169,10 @@ nav.main-nav.contrast a {
 }
 nav.pagination {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 8px;
+  right: 8px;
+  font-size: 12px;
+  background-color: rgba(252, 247, 248, 0.1);
 }
 article.post-preview {
   padding: 8px 0 8px 72px;
