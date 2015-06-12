@@ -273,15 +273,15 @@ article.post-preview .post-preview-main .post-excerpt p {
   font-size: 13px;
 }
 article.post-preview .post-preview-main .post-excerpt h1 {
-  font-size: 2vh;
+  font-size: 1.5em;
 }
 article.post-preview .post-preview-main .post-excerpt h2,
 article.post-preview .post-preview-main .post-excerpt h3,
 article.post-preview .post-preview-main .post-excerpt h4 {
-  font-size: 1vh;
+  font-size: 1em;
 }
 article.post-preview .post-preview-main .post-excerpt h5 {
-  font-size: 0.5vh;
+  font-size: 0.5em;
 }
 article.post-preview .post-preview-main .post-excerpt img {
   max-height: 480px;
