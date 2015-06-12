@@ -233,6 +233,12 @@ nav.pagination {
   color: #fcf7f8;
   z-index: 100;
 }
+nav.pagination .older-posts {
+  padding-left: 12px;
+}
+nav.pagination .newer-posts {
+  padding-right: 12px;
+}
 article.post-preview {
   padding: 8px 0 8px 72px;
   display: -webkit-box;
