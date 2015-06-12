@@ -2,14 +2,11 @@
 	.main-header {
 		.display(flex);
 
-
 		// layout
-		position: fixed;
-		left: 0;
-		top: 0;
-		height: 100%;
+		position: relative;
+		height: 100vh;
 		width: 100%;
-		z-index: 4;
+		z-index: 20;
 
 		// content
 		overflow-x: hidden;
@@ -37,31 +34,48 @@
 		}
 	}
 
-	// when scrolled down or not first page
-	&.scrolled, &.paged {
+	&.leaving {
 		.main-header {
-			width: @sidebar-width-normal;
+			left: -100vw;
+		}
+	}
+}
 
-			.page-title {
-				font-size: 3vh;
-			}
+@media @desktop {
+	.layout-container {
+		.main-header {
+			position: fixed;
+			left: 0;
+			top: 0;
+		}
 
-			@media @phone {
-				width: @sidebar-width-phone;
-			}
+		&.scrolled, &.paged {
+			.main-header {
+				width: @sidebar-width-normal;
 
-			.main-header-content {
+				.page-title {
+					font-size: 3vh;
+				}
 
-				.page-description {
-					display: none;
+				@media @phone {
+					width: @sidebar-width-phone;
+				}
+
+				.main-header-content {
+
+					.page-description {
+						display: none;
+					}
 				}
 			}
 		}
 	}
+}
 
-	&.leaving {
+@media @phone, @tablet {
+	.layout-container.paged {
 		.main-header {
-			left: -100vw;
+			height: auto;
 		}
 	}
 }

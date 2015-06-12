@@ -14,8 +14,10 @@
 
 		overflow-x: hidden;
 
-		@media @phone {
+		@media @phone, @tablet {
 			margin-left: @sidebar-width-phone;
+			padding-left: 12px;
+			padding-right: 12px;
 		}
 
 		&.navigating {
