@@ -236,6 +236,7 @@ article.post-preview * {
 }
 article.post-preview .post-preview-image {
   background-size: cover;
+  background-position-y: 50%;
   background-color: #275dad;
   width: 64px;
   position: absolute;
