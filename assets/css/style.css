@@ -407,6 +407,24 @@ article.post-preview:hover * {
 .author-column .post-author span {
   font-size: 10px;
 }
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 959px) {
+  .author-column {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .author-column .post-author {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .author-column .post-author p,
+  .author-column .post-author span {
+    font-size: 14px;
+  }
+}
 .layout-container.scrolled .author-column {
   opacity: 1;
 }

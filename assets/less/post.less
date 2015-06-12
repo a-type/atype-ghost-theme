@@ -91,6 +91,22 @@
 	}
 }
 
+@media @phone, @tablet {
+	.author-column {
+		position: static;
+		width: 100%;
+		height: auto;
+
+		.post-author {
+			.transform(none);
+
+			p, span {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
 .layout-container.scrolled {
 	.author-column {
 		opacity: 1;
