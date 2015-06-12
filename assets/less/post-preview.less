@@ -38,12 +38,17 @@ article.post-preview {
 			.post-title {
 				font-family: "Open Sans", sans-serif;
 				font-weight: 400;
+				a {
+					font-style: normal;
+				}
 			}
 		}
 
 		.post-excerpt {
 			max-height: 240px;
 			overflow-y: hidden;
+			color: @color-foreground;
+			font-style: normal;
 
 			color: @color-foreground;
 
@@ -111,7 +116,7 @@ article.post-preview {
 			}
 		}
 
-		* {
+		*, text {
 			color: @color-foreground-contrast;
 			text-shadow : 0 0 8px @color-background-contrast;
 

@@ -70,23 +70,23 @@ h5 {
 }
 h1 {
   font-weight: 400;
-  font-size: 3vh;
+  font-size: 1.5em;
 }
 h2 {
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1em;
 }
 h3 {
   font-weight: 300;
-  font-size: 2vh;
+  font-size: 1em;
 }
 h4 {
   font-weight: 300;
-  font-size: 1vh;
+  font-size: 0.5em;
 }
 h5 {
   font-weight: 200;
-  font-size: 1vh;
+  font-size: 0.5em;
 }
 /* Media */
 /* Sidebar transition values */
@@ -112,7 +112,7 @@ h5 {
 .layout-container .main-header .main-header-content .page-title {
   font-family: "Quicksand", "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 5vh;
+  font-size: 3em;
 }
 .layout-container .main-header .main-header-content .page-description {
   font-family: "Open Sans", "Helvetica", sans-serif;
@@ -134,6 +134,7 @@ h5 {
   .layout-container.scrolled .main-header .page-title,
   .layout-container.paged .main-header .page-title {
     font-size: 3vh;
+    font-size: 1.5em;
   }
   .layout-container.scrolled .main-header .main-header-content .page-description,
   .layout-container.paged .main-header .main-header-content .page-description {
@@ -257,9 +258,13 @@ article.post-preview .post-preview-main .post-header .post-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
+article.post-preview .post-preview-main .post-header .post-title a {
+  font-style: normal;
+}
 article.post-preview .post-preview-main .post-excerpt {
   max-height: 240px;
   overflow-y: hidden;
+  font-style: normal;
   color: #222222;
 }
 article.post-preview .post-preview-main .post-excerpt p {
@@ -322,7 +327,8 @@ article.post-preview:hover .post-preview-image {
 article.post-preview:hover .read-more i {
   left: 64px;
 }
-article.post-preview:hover * {
+article.post-preview:hover *,
+article.post-preview:hover text {
   color: #fcf7f8;
   text-shadow: 0 0 8px #222222;
   transition: 0.4s;
