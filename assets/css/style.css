@@ -342,7 +342,7 @@ article.post-preview:hover * {
   position: absolute;
   left: 0;
   bottom: 15%;
-  right: 15%;
+  right: 0;
   cursor: pointer;
 }
 .post-head .main-header-content .post-back:hover {
@@ -362,6 +362,7 @@ article.post-preview:hover * {
 }
 .scrolled .post-head .post-back {
   display: block;
+  right: 15%;
 }
 .post-content {
   margin-right: 20%;
