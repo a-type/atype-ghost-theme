@@ -1,7 +1,7 @@
 @content-padding: 64px;
 
 .layout-container {
-	.page-content, .post-content {
+	.content {
 		background-color: @color-background;
 
 		position: relative;
@@ -24,7 +24,7 @@
 	}
 
 	&.paged {
-		.page-content, .post-content {
+		.content {
 			.animation(scroll-up @default-transition-time);
 		}
 	}
@@ -32,7 +32,7 @@
 
 @media @phone, @tablet {
 	.layout-container {
-		.page-content, .post-content {
+		.content {
 			margin-top: 15%;
 			opacity: 1;
 		}
@@ -41,13 +41,13 @@
 
 @media @desktop {
 	.layout-container {
-		.page-content, .post-content {
+		.content {
 			margin-top: 100%;
 			opacity: 0;
 		}
 
 		&.scrolled, &.paged {
-			.page-content, .post-content {
+			.content {
 				margin-top: 25%;
 				opacity: 1;
 			}
