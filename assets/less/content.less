@@ -6,8 +6,6 @@
 
 		position: relative;
 		top: 0;
-		margin-top: 100%;
-		opacity: 0;
 
 		margin-left: @sidebar-width-normal;
 		padding-left: @content-padding;
@@ -25,16 +23,34 @@
 		}
 	}
 
-	&.scrolled, &.paged {
-		.page-content, .post-content {
-			margin-top: 25%;
-			opacity: 1;
-		}
-	}
-
 	&.paged {
 		.page-content, .post-content {
 			.animation(scroll-up @default-transition-time);
+		}
+	}
+}
+
+@media @phone, @tablet {
+	.layout-container {
+		.page-content, .post-content {
+			margin-top: 15%;
+			opacity: 1;
+		}
+	}
+}
+
+@media @desktop {
+	.layout-container {
+		.page-content, .post-content {
+			margin-top: 100%;
+			opacity: 0;
+		}
+
+		&.scrolled, &.paged {
+			.page-content, .post-content {
+				margin-top: 25%;
+				opacity: 1;
+			}
 		}
 	}
 }
