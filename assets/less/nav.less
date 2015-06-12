@@ -17,10 +17,13 @@ nav.main-nav {
 }
 
 nav.pagination {
-	position: fixed;
-	bottom: 8px;
-	right: 8px;
+	padding: 8px;
+	margin-top: 32px;
+	padding-right: 16px;
+	.display(flex);
+	.justify-content(flex-end);
 	font-size: 12px;
-	background-color: fade(@color-foreground-contrast, 10%);
+	background-color: fade(@color-background-contrast, 20%);
+	color: @color-foreground-contrast;
 	z-index: 100;
 }

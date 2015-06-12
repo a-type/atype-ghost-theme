@@ -70,23 +70,23 @@ h5 {
 }
 h1 {
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 h2 {
   font-weight: 400;
-  font-size: 1em;
+  font-size: 2em;
 }
 h3 {
   font-weight: 300;
-  font-size: 1em;
+  font-size: 2em;
 }
 h4 {
   font-weight: 300;
-  font-size: 0.5em;
+  font-size: 1em;
 }
 h5 {
   font-weight: 200;
-  font-size: 0.5em;
+  font-size: 1em;
 }
 /* Media */
 /* Sidebar transition values */
@@ -159,6 +159,7 @@ h5 {
   top: 0;
   margin-left: 20%;
   padding-left: 64px;
+  margin-bottom: 15%;
   overflow-x: hidden;
 }
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 959px) {
@@ -214,11 +215,22 @@ nav.main-nav.contrast a {
   text-shadow: 0 0 8px #222222;
 }
 nav.pagination {
-  position: fixed;
-  bottom: 8px;
-  right: 8px;
+  padding: 8px;
+  margin-top: 32px;
+  padding-right: 16px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
   font-size: 12px;
-  background-color: rgba(252, 247, 248, 0.1);
+  background-color: rgba(34, 34, 34, 0.2);
+  color: #fcf7f8;
   z-index: 100;
 }
 article.post-preview {
@@ -385,6 +397,9 @@ article.post-preview:hover text {
     margin-left: 0;
   }
 }
+.post-footer {
+  margin-top: 64px;
+}
 .author-column {
   position: fixed;
   width: 20%;
@@ -475,6 +490,8 @@ article.post-preview:hover text {
   margin-top: 24px;
   font-size: 12px;
   opacity: 0.5;
+  padding: 8px;
+  padding-left: 0;
 }
 .site-footer:hover {
   opacity: 1;
