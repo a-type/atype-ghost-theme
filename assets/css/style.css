@@ -130,6 +130,7 @@ h5 {
   .layout-container.scrolled .main-header,
   .layout-container.paged .main-header {
     width: 20%;
+    height: 110vh;
   }
   .layout-container.scrolled .main-header .page-title,
   .layout-container.paged .main-header .page-title {

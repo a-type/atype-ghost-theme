@@ -58,6 +58,14 @@
         $(window).smartresize(casperFullImg);
     });
 
+    // resize header for mobile once, don't make it scale to viewport size.
+    // this is due to mobile android address bar collapsing
+    var isMobile = window.matchMedia("(max-width: 959px)");
+    if (isMobile.matches) {
+        var headerHeight = $("header").css("height");
+        $("header").css("height", headerHeight);
+    }
+
     // smartresize
     jQuery.fn[sr] = function(fn) { return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 })(jQuery, 'smartresize');
