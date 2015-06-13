@@ -117,6 +117,7 @@ h5 {
 .layout-container .main-header .main-header-content .page-description {
   font-family: "Open Sans", "Helvetica", sans-serif;
   font-weight: 300;
+  font-size: 1.5em;
 }
 .layout-container.leaving .main-header {
   left: -100vw;
