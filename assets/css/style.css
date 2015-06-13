@@ -278,6 +278,7 @@ article.post-preview .post-preview-main {
 article.post-preview .post-preview-main .post-header .post-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  font-size: 1.5em;
 }
 article.post-preview .post-preview-main .post-header .post-title a {
   font-style: normal;
