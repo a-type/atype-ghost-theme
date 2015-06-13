@@ -62,8 +62,8 @@
     // this is due to mobile android address bar collapsing
     var isMobile = window.matchMedia("(max-width: 959px)");
     if (isMobile.matches) {
-        var headerHeight = $("header").css("height");
-        $("header").css("height", headerHeight);
+        var headerHeight = $("header.main-header").css("height");
+        $("header.main-header").css("height", headerHeight);
     }
 
     // smartresize
