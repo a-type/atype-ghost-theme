@@ -484,6 +484,9 @@ article.post-preview:hover text {
 .post-body code {
   font-family: "Source Code Pro", monospace;
 }
+.post-body code * {
+  font-family: "Source Code Pro", monospace;
+}
 .post-body p > code {
   background-color: rgba(34, 34, 34, 0.1);
 }
