@@ -4,7 +4,6 @@
 {{! The big featured header }}
 <header class="main-header sidebar">
 	<nav class="main-nav clearfix">
-		{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
 		<a class="button subscribe-button icon-feed" href="{{@blog.url}}/rss/">
             <i class="fa fa-rss"></i>
         </a>
@@ -13,6 +12,7 @@
 		<h1 class="page-title">{{@blog.title}}</h1>
 		<h2 class="page-description">{{@blog.description}}</h2>
 	</div>
+	<canvas id="headerSketch" class="header-canvas"></canvas>
 </header>
 
 {{! The main content area on the homepage }}
@@ -22,3 +22,8 @@
 
 	{{> "footer"}}
 </main>
+
+<script type="text/javascript">
+	var headerImage = "{{@blog.cover}}";
+	var iconImage = "{{@blog.logo}}";
+</script>

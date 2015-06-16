@@ -107,6 +107,8 @@ h5 {
   width: 50%;
   height: 50%;
   margin: auto;
+  position: relative;
+  z-index: 22;
   text-align: center;
 }
 .layout-container .main-header .main-header-content .page-title {
@@ -118,6 +120,14 @@ h5 {
   font-family: "Open Sans", "Helvetica", sans-serif;
   font-weight: 300;
   font-size: 1.5em;
+}
+.layout-container .main-header .header-canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 21;
 }
 .layout-container.leaving .main-header {
   left: -100vw;
