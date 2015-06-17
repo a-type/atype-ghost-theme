@@ -115,11 +115,17 @@ h5 {
   font-family: "Quicksand", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 3em;
+  text-align: center;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 .layout-container .main-header .main-header-content .page-description {
   font-family: "Open Sans", "Helvetica", sans-serif;
   font-weight: 300;
   font-size: 1.5em;
+  text-align: center;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 .layout-container .main-header .header-canvas {
   width: 100%;
