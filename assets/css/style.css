@@ -264,6 +264,9 @@ nav.main-nav.contrast a {
   color: #fcf7f8;
   text-shadow: 0 0 8px #222222;
 }
+nav.main-nav.contrast a i {
+  color: #fcf7f8;
+}
 nav.pagination {
   padding: 8px;
   margin-top: 32px;
