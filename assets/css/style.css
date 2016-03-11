@@ -127,38 +127,6 @@ h5 {
   margin-left: 16px;
   margin-right: 16px;
 }
-.layout-container .main-header .header-canvas {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 21;
-}
-.layout-container .main-header .clip-image {
-  height: 75%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  mask: url(/assets/img/cutout-transparent.png);
-  -webkit-mask: url(/assets/img/cutout-transparent.png) top left / cover;
-  background-size: 200%;
-  background-position-x: 50%;
-  background-position-y: 50%;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
-  -webkit-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
 .layout-container.leaving .main-header {
   left: -100vw;
 }
@@ -167,45 +135,31 @@ h5 {
     position: fixed;
     left: 0;
     top: 0;
-  }
-  .layout-container .main-header.home-header .main-header-content {
-    opacity: 0;
-  }
-  .layout-container.scrolled .main-header,
-  .layout-container.paged .main-header {
     width: 20%;
     height: 110vh;
   }
-  .layout-container.scrolled .main-header .page-title,
-  .layout-container.paged .main-header .page-title {
+  .layout-container .main-header .page-title {
     font-size: 3vh;
     font-size: 1.5em;
   }
-  .layout-container.scrolled .main-header .main-header-content,
-  .layout-container.paged .main-header .main-header-content {
+  .layout-container .main-header .main-header-content {
     opacity: 1;
     width: 100%;
   }
-  .layout-container.scrolled .main-header .main-header-content .page-description,
-  .layout-container.paged .main-header .main-header-content .page-description {
+  .layout-container .main-header .main-header-content .page-description {
     display: none;
-  }
-  .layout-container.scrolled .main-header .clip-image,
-  .layout-container.paged .main-header .clip-image {
-    opacity: 0;
   }
 }
 @media (min-width: 960px) and only screen and (max-width: 767px) {
-  .layout-container.scrolled .main-header,
-  .layout-container.paged .main-header {
+  .layout-container .main-header {
     width: 0;
   }
 }
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 959px) {
-  .layout-container.paged .main-header {
+  .layout-container .main-header {
     height: auto;
   }
-  .layout-container.paged .main-header .clip-image {
+  .layout-container .main-header .clip-image {
     display: none;
   }
 }
