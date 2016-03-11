@@ -1,11 +1,7 @@
 .layout-container {
+    .display(flex);
 	.main-header {
 		.display(flex);
-
-		// layout
-		position: relative;
-		height: 100vh;
-		width: 100%;
 		z-index: 20;
 
 		// content
@@ -52,11 +48,8 @@
 
 @media @desktop {
 	.layout-container {
+        flex-direction: row;
 		.main-header {
-			position: fixed;
-			left: 0;
-			top: 0;
-
             width: @sidebar-width-normal;
             height: 100vh;
 
@@ -84,7 +77,9 @@
 
 @media @phone, @tablet {
 	.layout-container {
+        flex-direction: column;
         .main-header {
+            width: 100%;
             height: auto;
 
             .clip-image {

@@ -7,14 +7,14 @@
 		position: relative;
 		top: 0;
 
-		margin-left: @sidebar-width-normal;
+		margin-left: 0;
 		padding-left: @content-padding;
 		margin-bottom: 15%;
 
 		overflow-x: hidden;
 
 		@media @phone, @tablet {
-			margin-left: @sidebar-width-phone;
+			margin-left: 0;
 			padding-left: 12px;
 			padding-right: 12px;
 		}
@@ -43,15 +43,8 @@
 @media @desktop {
 	.layout-container {
 		.content {
-			margin-top: 100%;
-			opacity: 0;
-		}
-
-		&.scrolled, &.paged {
-			.content {
-				margin-top: 25%;
-				opacity: 1;
-			}
+            margin-top: 25%;
+            opacity: 1;
 		}
 	}
 }

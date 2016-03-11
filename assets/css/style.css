@@ -16,6 +16,7 @@ html {
 .layout-container {
   position: relative;
   left: 0;
+  display: flex;
 }
 .layout-container.leaving {
   left: -100vw;
@@ -90,15 +91,19 @@ h5 {
 }
 /* Media */
 /* Sidebar transition values */
+.layout-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .layout-container .main-header {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  height: 100vh;
-  width: 100%;
   z-index: 20;
   overflow-x: hidden;
   background-color: #fcf7f8;
@@ -131,10 +136,10 @@ h5 {
   left: -100vw;
 }
 @media (min-width: 960px) {
+  .layout-container {
+    flex-direction: row;
+  }
   .layout-container .main-header {
-    position: fixed;
-    left: 0;
-    top: 0;
     width: 20%;
     height: 100vh;
   }
@@ -156,7 +161,11 @@ h5 {
   }
 }
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 959px) {
+  .layout-container {
+    flex-direction: column;
+  }
   .layout-container .main-header {
+    width: 100%;
     height: auto;
   }
   .layout-container .main-header .clip-image {
@@ -167,7 +176,7 @@ h5 {
   background-color: #ced3dc;
   position: relative;
   top: 0;
-  margin-left: 20%;
+  margin-left: 0;
   padding-left: 64px;
   margin-bottom: 15%;
   overflow-x: hidden;
@@ -196,11 +205,6 @@ h5 {
 }
 @media (min-width: 960px) {
   .layout-container .content {
-    margin-top: 100%;
-    opacity: 0;
-  }
-  .layout-container.scrolled .content,
-  .layout-container.paged .content {
     margin-top: 25%;
     opacity: 1;
   }
