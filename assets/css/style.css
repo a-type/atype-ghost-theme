@@ -155,11 +155,6 @@ h5 {
     display: none;
   }
 }
-@media (min-width: 960px) and only screen and (max-width: 767px) {
-  .layout-container .main-header {
-    width: 0;
-  }
-}
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 959px) {
   .layout-container {
     flex-direction: column;
@@ -173,12 +168,18 @@ h5 {
   }
 }
 .layout-container .content {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0;
   background-color: #ced3dc;
   position: relative;
   top: 0;
   margin-left: 0;
   padding-left: 64px;
-  margin-bottom: 15%;
+  padding-bottom: 15%;
   overflow-x: hidden;
 }
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 959px) {
@@ -191,7 +192,7 @@ h5 {
 .layout-container .content.navigating {
   top: -200vh;
 }
-.layout-container.paged .content {
+.layout-container .content {
   -webkit-animation: scroll-up 0.4s;
   -moz-animation: scroll-up 0.4s;
   -o-animation: scroll-up 0.4s;
@@ -199,22 +200,22 @@ h5 {
 }
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 959px) {
   .layout-container .content {
-    margin-top: 15%;
+    padding-top: 15%;
     opacity: 1;
   }
 }
 @media (min-width: 960px) {
   .layout-container .content {
-    margin-top: 25%;
+    padding-top: 25%;
     opacity: 1;
   }
 }
 lesshat-selector {
   -lh-property: 0; } 
-@-webkit-keyframes scroll-up{ from{ margin-top: 100%; opacity: 0; } to{ margin-top: 25%; opacity: 1; }}
-@-moz-keyframes scroll-up{ from{ margin-top: 100%; opacity: 0; } to{ margin-top: 25%; opacity: 1; }}
-@-o-keyframes scroll-up{ from{ margin-top: 100%; opacity: 0; } to{ margin-top: 25%; opacity: 1; }}
-@keyframes scroll-up{ from{ margin-top: 100%; opacity: 0; } to{ margin-top: 25%; opacity: 1; };
+@-webkit-keyframes scroll-up{ from{ padding-top: 100%; opacity: 0; } to{ padding-top: 25%; opacity: 1; }}
+@-moz-keyframes scroll-up{ from{ padding-top: 100%; opacity: 0; } to{ padding-top: 25%; opacity: 1; }}
+@-o-keyframes scroll-up{ from{ padding-top: 100%; opacity: 0; } to{ padding-top: 25%; opacity: 1; }}
+@keyframes scroll-up{ from{ padding-top: 100%; opacity: 0; } to{ padding-top: 25%; opacity: 1; };
 }
 nav.main-nav {
   position: fixed;
